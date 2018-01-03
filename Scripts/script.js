@@ -21,7 +21,8 @@ $(function () {
 
     //When the table cells are clicked
     function tdClick() {
-        if (!IsTableFull() && $(this).text() === '' && whosTurn === 'o') {
+        var cellText = $(this).text();
+        if (!IsTableFull() && cellText === '' && whosTurn === 'o') {
             $(this).text(user);
             $(this).css('color', 'blue');
             whosTurn = 'x';
@@ -73,7 +74,8 @@ $(function () {
         for (var i = 0; i < 9; i++) {
             tableControl.push(tds[i].textContent);
         }
-        if (tableControl.indexOf('') === -1) {
+        var tableStatus = tableControl.indexOf('');
+        if (tableStatus === -1) {
             return true;
         }
         return false;
@@ -85,7 +87,10 @@ $(function () {
             var arrayOfThisRow = [];
             var tableData = $(this).find('td');
             if (tableData.length > 0) {
-                tableData.each(function () { arrayOfThisRow.push($(this).text()); });
+                tableData.each(function () {
+                    var cellText = $(this).text();
+                    arrayOfThisRow.push(cellText);
+                });
                 board.push(arrayOfThisRow);
             }
         });
