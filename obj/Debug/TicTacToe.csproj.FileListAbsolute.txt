@@ -1,0 +1,9 @@
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\bin\TicTacToe.dll.config
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\bin\TicTacToe.dll
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\bin\TicTacToe.pdb
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\obj\Debug\TicTacToe.dll
+C:\Users\Adem\Desktop\Code Samples\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
