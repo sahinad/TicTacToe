@@ -1,10 +1,62 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <title>Unbeatable Tic Tac Toe Game</title>
     <meta charset="utf-8" />
-    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <link href="Content/style.min.css" rel="stylesheet" />
 </head>
 <body>
+    <h1>Tic Tac Toe</h1>
+    <div id="dialog-confirm" title="TicTacToe">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:auto;"></span>&nbsp;Do you want to be the first player or the second player?</p>
+    </div>
+    <div id="container">
+        <table id="theTable">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="result">
+        </div>
+    </div>
 
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="Scripts/script.min.js"></script>
+    <script>
+        $("#dialog-confirm").dialog({
+            resizable: false,
+            height: "auto",
+            width: 300,
+            modal: true,
+            buttons: {
+                "First Player": function () {
+                    $(this).dialog("close");
+                    turnPlayer = 1;
+                    whosTurn = 'o';
+                },
+                "Second Player": function () {
+                    $(this).dialog("close");
+                    secondPlayer();
+                    turnPlayer = 2;
+                    whosTurn = 'o';
+                }
+            }
+        });
+    </script>
 </body>
 </html>

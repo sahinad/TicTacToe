@@ -1,2 +1,78 @@
-﻿body {
+﻿@font-face {
+    font-family: 'BalooBhaijaan-Regular';
+    src: url('../fonts/BalooBhaijaan-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'BalooBhaijaan-Regular';
+}
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'BalooBhaijaan-Regular';
+}
+
+table {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+tr, td {
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 84px;
+    width: 33%;
+    height: 33%;
+}
+
+    tr:first-child {
+        border-bottom: 2px solid black;
+    }
+
+    tr:last-child {
+        border-top: 2px solid black;
+    }
+
+table tr td:first-child {
+    border-right: 2px solid black;
+}
+
+table tr td:last-child {
+    border-left: 2px solid black;
+}
+
+#result {
+    margin: 20px auto;
+    font-size: 36px;
+    text-align: center;
+}
+
+@media screen and (max-device-width: 767px) {
+    table {
+        width: 300px;
+        height: 300px;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    tr, td {
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #result {
+        font-size: 28px;
+    }
 }
